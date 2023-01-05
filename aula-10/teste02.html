@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste DOM 02</title>
+</head>
+<body>
+    <h1>Divisão de Valores</h1>
+    <input type="number" name="txdiv1" id="txdiv1">
+    <span>/</span>
+    <input type="number" name="txdiv2" id="txdiv2">
+    <input type="button" value="Dividir" onclick="divi()">
+    <p id="res">Resultado</p>
+
+    <h2>Potência de Valores </h2>
+    <input type="number" name="txpot1" id="txpot1">
+    <span>**</span>
+    <input type="number" name="txpot2" id="txpot2">
+    <input type="button" value="Potência" onclick="poten()">
+    <p id="resultado">Resultado</p>
+
+    <script>
+        function divi() {
+            var div1 = document.querySelector('#txdiv1')
+            var div2 = document.querySelector('#txdiv2')
+            var res = document.querySelector ('#res')
+            var n1 = Number(div1.value)
+            var n2 = Number(div2.value)
+            r = n1 / n2
+
+            res.innerHTML = `A divisão entre ${n1} e ${n2} é igual a, ${r}`
+        }
+
+        function poten() {
+            var pot1 = document.querySelector('#txpot1')
+            var pot2 = document.querySelector('#txpot2')
+            var resultado = document.querySelector('#resultado')
+            var n1 = Number(pot1.value)
+            var n2 = Number(pot2.value)
+            f = n1 ** n2
+
+            resultado.innerHTML = `A potência de ${n1} sobre ${n2} é igual a, ${f}`
+        }
+    </script>
+</body>
+</html>

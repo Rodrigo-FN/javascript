@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste DOM</title>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txnum1" id="txnum1">
+    <span>+</span>
+    <input type="number" name="txnum2" id="txnum2">
+    <input type="button" value="Somar" onclick="somar()">
+    <p id="res">Resultado</p>
+
+    <h2>Multiplicando Valores</h2>
+    <input type="number" name="txmin1" id="txmin1">
+    <span>*</span>
+    <input type="number" name="txmin2" id="txmin2">
+    <input type="button" value="Somar" onclick="multi()">
+    <p id="r">Resultado</p>
+
+
+    <script>
+        function somar() {
+            var num1 = document.querySelector('#txnum1')
+            var num2 = document.querySelector('#txnum2')
+            var res = document.querySelector('#res')
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var s = n1 + n2
+
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a, ${s}`
+        }
+        
+        function multi() {
+            var min1 = document.querySelector('#txmin1')
+            var min2 = document.querySelector('#txmin2')
+            var r = document.querySelector('#r')
+            var n1 = Number(min1.value)
+            var n2 = Number(min2.value)
+            var s = n1 * n2
+
+            r.innerHTML = `A multiplicação entre ${n1} e ${n2} é igual a, ${s}`
+        }
+        
+    </script>
+</body>
+</html>
