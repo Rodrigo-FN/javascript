@@ -1,7 +1,7 @@
 # Operadores
 
 * 1 operadores Aritmeticos
-* 2 opreradores Telacionais    // ordem que feito
+* 2 opreradores Relacionais    // ordem que feito
 * 3 operadores Lógicos
 
 ## Relacionais
@@ -68,7 +68,7 @@ Ordem de execução: ! >>> && >>> ||
 ex: 
 ```JS
 
- idade >= 15 && idade <= 17     // a idade está entre 15 e 17?
+ idade >= 15 && idade <= 17     // a idade está entre 15 é 17?
  
  estado == 'RJ' || estado == 'SP' // o estado é RJ ou SP?
 
