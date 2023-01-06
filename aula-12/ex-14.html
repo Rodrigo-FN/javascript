@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições part 2</title>
+</head>
+<body>
+    <h1></h1>
+    <img src="./img/condição-aninhada.png" alt="condição aninhada" style="width: 200px;">
+    <script> // CONDIÇÃO ANINHADA
+
+      var agora = new Date() // Pegar hora Atual
+      var hora = agora.getHours()
+      document.write(`<p>Agora são exatamente ${hora} horas. </p>`)
+      if (hora < 12) {
+        document.write('Bom dia!')
+      } else if ( hora < 18) {
+        document.write(`Boa Tarde!`)
+      } else {
+        document.write (`Boa noite!`)
+      }
+    </script>
+</body>
+</html>

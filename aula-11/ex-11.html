@@ -7,14 +7,26 @@
     <title>Condições</title>
 </head>
 <body>
+    <h1>Você é Brasileiro?</h1>
+    <input type="text" name="lugar" id="lugar">
+    <input type="button" value="Averiguar" onclick="averi()"> <br>
+    <div id="res">País</div>
     <script>
-        var país = 'França'
-        document.write(`Vivendo em ${país} <br>`)
-        if (país == 'Brasil') {
-            document.write('Você é Brasileiro!')
-        } else {
-            document.write('Você é Estrangeiro!')
+        function averi() {
+            var lu = document.querySelector('#lugar')
+            var res = document.querySelector('#res')
+            var país = (lu.value)
+
+            res.innerHTML = `<p>Seu país é <strong>${país}</strong></p>`
+            if (país == 'Brasil') {
+                res.innerHTML += `Você é Brasileiro!`
+            } else {
+                res.innerHTML += `Você é Estrangeiro!
+                `
+            }
+
         }
+        
     </script>
 </body>
 </html>
