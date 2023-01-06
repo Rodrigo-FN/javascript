@@ -39,6 +39,12 @@ footer {
 
 img {
     width: 250PX;
-    border-radius: 50%;
+    border-radius: 20px;
+    
+}
+
+.res {
+    text-align: center;
+
     
 }
